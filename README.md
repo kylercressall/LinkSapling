@@ -1,4 +1,5 @@
 <a id="readme-top"></a>
+[![CI](https://github.com/kylercressall/LinkSapling/actions/workflows/ci.yml/badge.svg)](https://github.com/kylercressall/LinkSapling/actions/workflows/ci.yml)
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]

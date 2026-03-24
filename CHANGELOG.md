@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Jest testing framework with unit tests for `slugify`, `formatDate`, `extractPreview`, and `loadConfig`
+- Babel config (`babel.config.js`) to allow Jest to transform ESM dependencies
+- Test fixtures: sample `linksapling.yaml` and markdown post for isolated test runs
+- CI workflow (`.github/workflows/ci.yml`) — runs tests and build on every push and pull request to `main`
+
+### Changed
+
+- `config.js` validation errors now throw instead of calling `process.exit`, allowing tests to catch them
+- `build.js` helper functions (`slugify`, `formatDate`, `extractPreview`, `fontVars`) are now exported for testing
+- `build.js` build execution is now guarded with `require.main === module` so importing the file doesn't trigger a build
+
 ## [0.1.0] - 2026-03-19
 
 ### Added

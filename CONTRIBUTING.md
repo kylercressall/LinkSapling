@@ -10,11 +10,15 @@ Feel free to contribute to LinkSapling! Features, icons, bug fixes are all welco
    npm install
    ```
 3. Make your changes
-4. Run a build to make sure nothing broke
+4. Run the tests to make sure nothing broke
+   ```sh
+   npm test
+   ```
+5. Run a build to verify the output
    ```sh
    npm run build
    ```
-5. Open `dist/index.html` and confirm the output looks right
+6. Open `dist/index.html` and confirm the output looks right
 
 ## Project Structure
 
@@ -28,6 +32,9 @@ src/
   templates/
     index.html.hbs  # Handlebars template for the main page
     post.html.hbs   # Handlebars template for individual post pages
+tests/
+  unit/             # Unit tests for individual helper functions
+  fixtures/         # Fake config and posts used by tests — not real content
 posts/              # Example markdown posts
 dist/               # Generated output — don't edit directly
 ```
