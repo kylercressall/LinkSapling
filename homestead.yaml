@@ -1,11 +1,11 @@
-# Your display name — shown as the page title and <h1>
+# Your display name - shown as the page title and <h1>
 title: "Your Name"
 
 # Short bio shown below your name (optional)
 bio: "Building things on the internet."
 
 # Path to your profile picture, relative to this file (optional)
-# avatar: "./avatar.jpg"
+avatar: "./images/avatar.png"
 
 theme:
   background: "#f6f1e8" # warm paper-like background
@@ -14,7 +14,7 @@ theme:
   text: "#2f241f" # deep brown text
   font: "Oxygen" # more editorial/artsy feel
   radius: "16px" # softer, more organic corners
-  border: "#d4b99a" # optional — outlines and shadows (omit to disable)
+  border: "#d4b99a" # optional - outlines and shadows (omit to disable)
 
 links:
   - label: "GitHub"
@@ -30,5 +30,11 @@ links:
     icon: globe
 
 # Folder of .md files to show as blog posts (optional)
-# Each file should have frontmatter: title, date, excerpt
+# Each file should have frontmatter: title, date, subtitle
 posts_dir: "./posts"
+
+# Homepage layout (defaults to "blog")
+#   links       - just the link buttons, no posts column
+#   portfolio   - links + posts showing title and subtitle only
+#   blog        - links + posts with a preview of the post text
+layout: portfolio
