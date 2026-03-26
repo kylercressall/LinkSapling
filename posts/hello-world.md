@@ -1,7 +1,7 @@
 ---
 title: "Hello, World"
 date: 2026-03-19
-excerpt: "An example post to show how this feature works."
+subtitle: "An example post to show how this feature works."
 ---
 
 ## Why I built this

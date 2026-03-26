@@ -30,5 +30,5 @@ links:
     icon: globe
 
 # Folder of .md files to show as blog posts (optional)
-# Each file should have frontmatter: title, date, excerpt
+# Each file should have frontmatter: title, date, subtitle
 posts_dir: "./posts"

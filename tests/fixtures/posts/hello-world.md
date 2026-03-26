@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: 2025-01-15
-excerpt: My first post
+subtitle: My first post
 ---
 
 This is the first paragraph of the post.

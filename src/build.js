@@ -83,7 +83,7 @@ function loadPosts(config) {
         title: data.title || slug,
         date: formatDate(data.date),
         rawDate: data.date ? new Date(data.date) : new Date(0),
-        excerpt: data.excerpt || null,
+        subtitle: data.subtitle || null,
         preview: extractPreview(content),
         content: marked(content, { gfm: true }),
         url: `posts/${slug}.html`,
