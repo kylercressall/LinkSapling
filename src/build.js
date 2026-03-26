@@ -124,6 +124,24 @@ function build() {
     iconSvg: link.icon ? (icons[link.icon] || null) : null,
   }));
 
+  // Resolve layout — controls what the homepage shows
+  const VALID_LAYOUTS = ['links', 'portfolio', 'blog'];
+  const layout = config.layout || "links";
+  if (!VALID_LAYOUTS.includes(layout)) {
+    console.warn(`Warning: unknown layout "${layout}", falling back to "blog". Valid options: ${VALID_LAYOUTS.join(', ')}`);
+  }
+
+  // For links: pass no posts so the section is omitted and .links:only-child CSS kicks in
+  // For portfolio: strip preview text so cards show title + subtitle only
+  // For blog: posts unchanged
+  let postsForIndex = posts;
+  if (layout === 'links') {
+    postsForIndex = [];
+  } else if (layout === 'portfolio') {
+    postsForIndex = posts.map(p => ({ ...p, preview: null, date: null }));
+    
+  }
+
   // Shared template context
   const shared = {
     css,
@@ -139,7 +157,8 @@ function build() {
     bio: config.bio,
     avatar: avatarPath,
     links,
-    posts,
+    posts: postsForIndex,
+    portfolioLayout: layout === 'portfolio',
   });
   fs.writeFileSync(path.join(DIST, 'index.html'), indexHtml);
 

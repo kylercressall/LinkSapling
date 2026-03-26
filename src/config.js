@@ -33,6 +33,7 @@ function loadConfig(root = process.cwd()) {
     },
     links: raw.links,
     posts_dir: raw.posts_dir || null,
+    layout: raw.layout || 'blog',
   };
 }
 

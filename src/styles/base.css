@@ -44,27 +44,11 @@ main {
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
   align-items: start;
-  position: relative;
-}
-
-.columns::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: calc(100% / 3);
-  transform: translateX(-50%);
-  width: 1px;
-  background: var(--border, color-mix(in srgb, var(--text) 10%, transparent));
 }
 
 @media (max-width: 640px) {
   .columns {
     grid-template-columns: 1fr;
-  }
-
-  .columns::after {
-    display: none;
   }
 }
 
@@ -149,6 +133,21 @@ h1 {
 /* --- Posts --- */
 
 .posts {
+}
+
+.posts--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.posts--grid .posts-heading {
+  grid-column: 1 / -1;
+}
+
+.posts--grid .post-card {
+  padding: 0.625rem 0.75rem;
+  margin-bottom: 0;
 }
 
 .posts-heading {

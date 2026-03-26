@@ -47,8 +47,7 @@
       </nav>
 
       {{#if posts.length}}
-      <section class="posts">
-        <p class="posts-heading">Posts</p>
+      <section class="posts{{#if portfolioLayout}} posts--grid{{/if}}">
         {{#each posts}}
         <a class="post-card" href="{{ url }}">
           <div class="post-header">
