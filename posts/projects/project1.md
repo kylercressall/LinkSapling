@@ -1,7 +1,7 @@
 ---
-title: "Project 1"
+title: "Certification 1"
 date: 2026-03-19
-subtitle: "An example project."
+subtitle: "Expertise in 3d modelling using Blender 5"
 ---
 
 ## Why I built this

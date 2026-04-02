@@ -41,7 +41,7 @@ rows:
     sections:
       - id: "connect"
         type: "links"
-        width: 1
+        width: 3
         links:
           - label: "GitHub"
             url: "https://github.com/yourname"
@@ -55,10 +55,18 @@ rows:
             url: "https://yoursite.com"
             icon: globe
 
+          - label: "LinkedIn"
+            url: "https://linkedin.com/in/yourname"
+            icon: linkedin
+
+          - label: "Email"
+            url: "mailto:you@example.com"
+            icon: email
+
       - id: "projects"
         type: "portfolio"
-        title: "Projects"
-        width: 3
+        title: "Portfolio"
+        width: 5
         posts_dir: "./posts/projects"
 
   - column_width: medium

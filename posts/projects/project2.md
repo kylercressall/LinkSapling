@@ -1,7 +1,7 @@
 ---
-title: "Project 2"
+title: "B.S. Bachelors of Computer Science"
 date: 2026-03-19
-subtitle: "My second more impressive project"
+subtitle: "3.6 GPA at Utah State University"
 ---
 
 ## Why I built this

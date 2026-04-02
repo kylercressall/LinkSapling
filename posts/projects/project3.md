@@ -1,7 +1,7 @@
 ---
-title: "My opinion on open source software"
+title: "Sales Internship"
 date: 2026-03-19
-subtitle: "Explaining my deep, complex opinion on OSS."
+subtitle: "Internship at Sales Co. to sell B2B software."
 ---
 
 ## Why I built this
